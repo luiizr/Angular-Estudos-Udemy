@@ -13,5 +13,5 @@ import { HomeComponent } from '../../../views/home/home.component';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-
+  
 }
