@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
+import { Router } from '@angular/router';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -19,6 +20,24 @@ import { MatListModule } from '@angular/material/list';
 export class AppComponent {
   title = 'angular';
   name = 'Luiz';
+
+
+
+
+  
+  constructor(private router: Router) {}
+
+  goToProducts() {
+    this.router.navigate(['/products']);
+  }
+
+  goToHome() {
+    this.router.navigate(['/']);
+  }
+
+
 }
+
+
 
 //RouterOutlet

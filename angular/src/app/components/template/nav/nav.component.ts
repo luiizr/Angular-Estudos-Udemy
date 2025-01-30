@@ -6,6 +6,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { HomeComponent } from '../../../views/home/home.component';
 
+
 @Component({
   selector: 'app-nav',
   imports: [RouterOutlet, HomeComponent, MatSidenavModule, MatListModule, MatToolbarModule],
@@ -13,5 +14,5 @@ import { HomeComponent } from '../../../views/home/home.component';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-  
+
 }
