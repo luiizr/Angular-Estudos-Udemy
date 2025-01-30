@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import path from 'path';
 
 import { HomeComponent } from './views/home/home.component';
+// import { NavComponent } from './components/template/nav/nav.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 
 export const routes: Routes = [{
