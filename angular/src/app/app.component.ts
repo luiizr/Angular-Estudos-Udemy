@@ -21,15 +21,6 @@ import { MatListModule } from '@angular/material/list';
 export class AppComponent {
   title = 'angular';
   name = 'Luiz';
-
-
-
-
   
 
-
 }
-
-
-
-//RouterOutlet

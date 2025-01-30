@@ -5,7 +5,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { HomeComponent } from '../../../views/home/home.component';
-import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 
 
@@ -19,13 +18,13 @@ import { RouterLink } from '@angular/router';
 export class NavComponent {
 
 
-  constructor(private router: Router) {}
+  // constructor(private router: Router) {}
 
-  goToProducts() {
-    this.router.navigate(['/products']);
-  }
+  // goToProducts() {
+  //   this.router.navigate(['/products']);
+  // }
 
-  goToHome() {
-    this.router.navigate(['/']);
-  }
+  // goToHome() {
+  //   this.router.navigate(['/']);
+  // }
 }
