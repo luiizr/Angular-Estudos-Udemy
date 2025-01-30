@@ -15,12 +15,12 @@ import { MatListModule } from '@angular/material/list';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterLink, RouterOutlet, HomeComponent, MatCardModule, HeaderComponent, MatToolbarModule, FooterComponent, NavComponent, MatListModule, MatSidenavModule],
+  imports: [MatCardModule, HeaderComponent, MatToolbarModule, FooterComponent, NavComponent, MatListModule, MatSidenavModule],
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
   title = 'angular';
   name = 'Luiz';
-  
+
 
 }

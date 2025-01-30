@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [RouterLink, RouterOutlet, HomeComponent, MatSidenavModule, MatListModule, MatToolbarModule],
+  imports: [RouterLink, RouterOutlet, MatSidenavModule, MatListModule, MatToolbarModule],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
