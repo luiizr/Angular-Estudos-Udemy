@@ -21,11 +21,11 @@ export class NavComponent {
 
   constructor(private router: Router) {}
 
-  goToProducts() {
-    this.router.navigate(['/products']);
-  }
+  // goToProducts() {
+  //   this.router.navigate(['/products']);
+  // }
 
-  goToHome() {
-    this.router.navigate(['/']);
-  }
+  // goToHome() {
+  //   this.router.navigate(['/']);
+  // }
 }
