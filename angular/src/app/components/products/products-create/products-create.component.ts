@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { RouterLink, Router } from '@angular/router';
 
 @Component({
   selector: 'app-products-create',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './products-create.component.css'
 })
 export class ProductsCreateComponent {
+
+
+  constructor() {}
 
   // propLegal = "qualquer"
 
