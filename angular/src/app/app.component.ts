@@ -25,13 +25,4 @@ export class AppComponent {
   name = 'Luiz';
 
 
-
-
-  
-
-
 }
-
-
-
-//RouterOutlet

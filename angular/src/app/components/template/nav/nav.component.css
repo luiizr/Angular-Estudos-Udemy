@@ -12,6 +12,7 @@
 }
 
 .content {
-    padding: 16px;
+    padding-left: 16px;
+    padding-top: 5px;
     background-color: #fff;
 }
