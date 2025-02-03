@@ -1,30 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-// import { RouterLink, Router } from '@angular/router';
+import { ProductService } from '../product.service';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterLink, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-products-create',
-  imports: [],
+  standalone: true,
+  imports: [MatButtonModule, RouterLink],
   templateUrl: './products-create.component.html',
   styleUrl: './products-create.component.css'
 })
 export class ProductsCreateComponent {
 
 
-  constructor() {}
+  constructor(private productService: ProductService,
+      private router: Router) {}
 
-  // propLegal = "qualquer"
+    ngOnInit(): void {
 
-  //   constructor(private router: Router) { }
+    }
 
-  //   ngOnInit(): void {
-      
-  //   }
+    createProduct(): void {
+      this.productService.showMessage('Deu certo papai!') 
+    }
 
-  //   navigateToProductsCreate(): void {
-  //     this.router.navigate(['/products/create'])
-  //   }
-
-  //   fazerAlgo(): void {
-  //     console.log('Fazendo algo!')
-  //   }
+    cancel(): void {
+      this.router.navigate(['/products'])
+    }
 }

@@ -11,16 +11,10 @@ import { RouterLink, Router } from '@angular/router';
 })
 export class ProductCrudComponent {
 
-  propLegal = "qualquer"
-
     constructor(private router: Router) { }
 
     ngOnInit(): void {
       
-    }
-
-    navigateToProductsCreate(): void {
-      this.router.navigate(['/products/create'])
     }
 
 }
