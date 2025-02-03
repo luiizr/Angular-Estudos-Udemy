@@ -15,15 +15,13 @@ import { Products } from '../product.model';
 export class ProductsCreateComponent {
 
   product: Products = {
-    name: 'Produto de teste',
-    price: 125.98
+    name: '',
+    price: null
   }
 
 
-  constructor(
-      private router: Router) {
-        console.log('teste')
-      }
+  constructor(private productService: ProductService,
+      private router: Router) { }
 
 
     ngOnInit(): void {
@@ -31,13 +29,11 @@ export class ProductsCreateComponent {
     }
 
     createProduct(): void {
-      // this.productService.create(this.product).subscribe(() => {
-      //   this.productService.showMessage('Produto criado!')
-      //   this.router.navigate(['/products'])
-      // })
-      
-      // this.productService.showMessage('Tudo show!') 
-    }
+      console.log('olá')
+      this.productService.create(this.product).subscribe(() => {
+        this.productService.showMessage('Produto criado!')
+        this.router.navigate(['/products'])
+      })}
 
     cancel(): void {
       this.router.navigate(['/products'])
