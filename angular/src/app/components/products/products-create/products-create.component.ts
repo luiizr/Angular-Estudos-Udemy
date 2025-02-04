@@ -5,10 +5,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterLink, Router } from '@angular/router';
 import { Products } from '../product.model';
 
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
 @Component({
   selector: 'app-products-create',
   standalone: true,
-  imports: [MatButtonModule, RouterLink],
+  imports: [MatCardModule, FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, RouterLink],
   templateUrl: './products-create.component.html',
   styleUrl: './products-create.component.css'
 })
