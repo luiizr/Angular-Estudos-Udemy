@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 export class ProductReadComponent implements OnInit{
 
   produtos: Products[] = [];
+  displayedColumns = ['id', 'name', '']
 
     constructor(private productService: ProductService) {
 

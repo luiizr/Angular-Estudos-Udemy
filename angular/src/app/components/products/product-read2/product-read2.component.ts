@@ -4,6 +4,7 @@ import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
 import { MatSortModule, MatSort } from '@angular/material/sort';
 import { ProductRead2DataSource } from './product-read2-datasource';
 import { Products } from '../product.model';
+
 @Component({
   selector: 'app-product-read2',
   templateUrl: './product-read2.component.html',
@@ -19,6 +20,10 @@ export class ProductRead2Component implements AfterViewInit {
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['id', 'name'];
+
+  ngOnInit(): void {
+    this.dataSource = new ProductRead2DataSource();
+  }
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;

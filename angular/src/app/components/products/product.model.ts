@@ -1,5 +1,5 @@
 export interface Products {
-    id?: number // '?' -> não obrigatório
+    id: number 
     name: string
-    price: number | null
+    price?: number | null // '?' -> não obrigatório
 }

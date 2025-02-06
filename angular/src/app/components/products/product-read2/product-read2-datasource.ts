@@ -6,15 +6,13 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 import { Products } from '../product.model';
 
 // TODO: Replace this with your own data model type
-export interface Products {
-  id?: number // '?' -> não obrigatório
-  name: string
-  price?: number | null
-}
+// export interface ProductRead2Item {
+//   name: string;
+//   id: number;
+// }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: Products[] = [
-
   {id: 1, name: 'Hydrogen'},
   {id: 2, name: 'Helium'},
   {id: 3, name: 'Lithium'},
@@ -101,6 +99,7 @@ export class ProductRead2DataSource extends DataSource<Products> {
       const isAsc = this.sort?.direction === 'asc';
       switch (this.sort?.active) {
         case 'name': return compare(a.name, b.name, isAsc);
+        // case 'id': return compare(+a.id, +b.id, isAsc);
         case 'id': return compare(+a.id, +b.id, isAsc);
         default: return 0;
       }
