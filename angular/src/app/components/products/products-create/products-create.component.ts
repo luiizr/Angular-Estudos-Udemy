@@ -20,7 +20,7 @@ export class ProductsCreateComponent {
 
   product: Products = {
     name: '',
-    price: null
+    price: 0,
   }
 
 

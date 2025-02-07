@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/template/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar'
@@ -14,16 +14,19 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
-
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localePt);
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import { MatTableModule } from '@angular/material/table';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ProductRead2Component, ProductReadComponent, FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, ForDirective, RedDirective, RouterLink, RouterOutlet, HomeComponent, MatCardModule, HeaderComponent, MatToolbarModule, FooterComponent, NavComponent, MatListModule, MatSidenavModule],
-  templateUrl: 'app.component.html'
+  imports: [ProductRead2Component, ProductReadComponent, MatTableModule ,FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, ForDirective, RedDirective, RouterLink, RouterOutlet, HomeComponent, MatCardModule, HeaderComponent, MatToolbarModule, FooterComponent, NavComponent, MatListModule, MatSidenavModule],
+  templateUrl: 'app.component.html',
+  providers: [{ provide: LOCALE_ID, useValue: 'pt-BR' }],
 })
 export class AppComponent {
   title = 'angular';
